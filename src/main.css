@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* //Everyday Component Bg-Img */
+.bg-img1 {
+    background-image: url("./assets/multipleImg/everyday1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img2 {
+    background-image: url("./assets/multipleImg/everyday2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* //Everyday Component Bg-Img */
+
+/* //Width for FeedbackSlider.jsx */
+/* .my-custom-slide-style {
+    width: 380px !important;
+}
+
+@media (max-width: 900px) {
+    .my-custom-slide-style {
+        width: 100px !important;
+    }
+} */
+
+
+/* //Width for FeedbackSlider.jsx */
