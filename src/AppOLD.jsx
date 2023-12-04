@@ -6,19 +6,19 @@ import HomeWrapper from './layout/HomeWrapper';
 import LoginWrapper from './layout/LoginWrapper';
 
 
-const App = () => {
+const AppOLD = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    
+
     useEffect(() => {
         if (!location.pathname || location.pathname === "/") {
             navigate("/")
         }
-    }, [location]);
+    }, [location, navigate]);
 
 
-    const LoginWrapperRoutes = ["/login", "/register", "/check-email", "/careset-passwordrt", "/verification", "/create-password"]
+    const LoginWrapperRoutes = ["/login", "/register", "/check-email", "/reset-password", "/verification", "/create-password"]
     const isLoginRoute = LoginWrapperRoutes.includes(location.pathname);
     return (
         <>
@@ -33,4 +33,4 @@ const App = () => {
     )
 }
 
-export default App
+export default AppOLD

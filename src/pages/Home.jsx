@@ -10,7 +10,7 @@ import FeedbackSlider from '../components/homeComponent/FeedbackSlider'
 const Home = () => {
     return (
         <>
-            <Slider />
+            <Slider   />
             <Everyday />
             <NewArrival />
             <MenCategory />

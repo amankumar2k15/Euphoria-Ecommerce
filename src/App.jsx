@@ -17,14 +17,14 @@ function App() {
       {/* fire ? <LoginWrapper /> : */}
       {
         fire ? <HomeWrapper /> :
-          <div
+          < div
             className="flex items-center justify-center w-full"
             style={{ height: "100vh" }}
           >
             <SyncLoader size={18} color="#8A33FD" />
           </div>
       }
-    </Router>
+    </Router >
   );
 }
 

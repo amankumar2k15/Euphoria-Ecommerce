@@ -12,7 +12,7 @@ const HomeNavbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const listItems = [{ list: "shop" }, { list: "Man" }, { list: "woman" }, { list: "Combos" }, { list: "Joggers" },]
+    const listItems = ["shop", "Man", "woman", "Combos", "Joggers",]
 
     return (
         <>
@@ -27,7 +27,8 @@ const HomeNavbar = () => {
                     <div className="hidden md:flex justify-between items-center w-fit">
                         <ul className="flex items-center gap-8">
                             {
-                                listItems.map((item, index) => <Link className="capitalize hover:text-mediumBlack" to="/productList" key={index}>{item.list}</Link>)
+                                listItems.map((item, index) => <Link className="capitalize outline-none hover:text-mediumBlack" to="/productList" key={index}>{item
+                                }</Link>)
                             }
                         </ul>
 
@@ -44,9 +45,16 @@ const HomeNavbar = () => {
                                     placeholder="Search"
                                 />
                             </div>
-                            <button className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white"><FaHeart /></button>
-                            <button className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white"><FaShoppingCart /></button>
-                            <button className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white"> <FaUser /></button>
+                            <Link to="/wishlist" className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white">
+                                <FaHeart />
+                            </Link>
+                            <Link to="/cart" className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white">
+                                <FaShoppingCart />
+                            </Link>
+                            <Link to="/contactDetails
+                            " className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white">
+                                <FaUser />
+                            </Link>
                         </div>
                     </div>
 
@@ -92,9 +100,15 @@ const HomeNavbar = () => {
                                     </div>
                                 </li>
                                 <div className="flex-row items-center gap-4 p-4 flex">
-                                    <button className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white"><FaHeart /></button>
-                                    <button className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white"><FaShoppingCart /></button>
-                                    <button className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white"> <FaUser /></button>
+                                    <Link to="/wishlist" onClick={() => setIsMenuOpen(!isMenuOpen)} className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white">
+                                        <FaHeart />
+                                    </Link>
+                                    <Link to="/cart" onClick={() => setIsMenuOpen(!isMenuOpen)} className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white">
+                                        <FaShoppingCart />
+                                    </Link>
+                                    <Link to="/contactDetails" onClick={() => setIsMenuOpen(!isMenuOpen)} className="bg-mediumGray text-center text-mediumBlack p-3 rounded-lg mr-2 hover:bg-purpleColor hover:text-white">
+                                        <FaUser />
+                                    </Link>
 
                                 </div>
                             </ul>

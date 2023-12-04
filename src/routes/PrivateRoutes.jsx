@@ -7,6 +7,7 @@ import Wishlist from '../pages/wishlist/Wishlist'
 import ContactDetails from '../pages/personalInfo/ContactDetails'
 import { Route, Routes } from 'react-router-dom'
 import ErrorPage from './ErrorPage'
+import Checkout from '../pages/checkout/Checkout'
 
 const PrivateRoutes = () => {
     return (
@@ -17,6 +18,7 @@ const PrivateRoutes = () => {
             <Route path="/cart" element={<Cart />}></Route>
             <Route path="/wishlist" element={<Wishlist />}></Route>
             <Route path="/contactDetails" element={<ContactDetails />}></Route>
+            <Route path="/checkout" element={<Checkout />}></Route>
             <Route path="*" element={<ErrorPage />}></Route>
         </Routes>
     )

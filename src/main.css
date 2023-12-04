@@ -4,29 +4,58 @@
 
 /* //Everyday Component Bg-Img */
 .bg-img1 {
-    background-image: url("./assets/multipleImg/everyday1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("./assets/multipleImg/everyday1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bg-img2 {
-    background-image: url("./assets/multipleImg/everyday2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("./assets/multipleImg/everyday2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* //Everyday Component Bg-Img */
-
-/* //Width for FeedbackSlider.jsx */
-/* .my-custom-slide-style {
-    width: 380px !important;
+/* // home lowerslider  */
+.slick-slide > div {
+  margin: 0 1rem;
 }
 
-@media (max-width: 900px) {
-    .my-custom-slide-style {
-        width: 100px !important;
-    }
+/* //home upperslider */
+.slick-arrow {
+  display: none !important;
+}
+.billing-width {
+  width: 952px;
+}
+.order-summary-width {
+  width: 584px;
+}
+@media (max-width: 1200px) {
+  .billing-width {
+    width: 100%;
+    
+  }
+  .order-summary-width {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* .slick-next:before {
+    content: '→' !important;
+    position: absolute !important;
+    font-size: 49px !important;
+    right: 54px !important;
+}
+
+.slick-arrow,
+.slick-prev {
+    z-index: 1 !important;
+}
+
+.slick-prev:before {
+    content: '←' !important;
+    position: absolute !important;
+    font-size: 49px !important;
+    left: 54px !important;
 } */
-
-
-/* //Width for FeedbackSlider.jsx */

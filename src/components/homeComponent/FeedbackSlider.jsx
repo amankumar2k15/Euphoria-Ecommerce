@@ -10,32 +10,27 @@ import { CiStar } from "react-icons/ci";
 const data = [
     {
         img: rev1,
-        name: `Floyd Miles`,
+        name: "Floyd Miles",
         review:
             "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit . Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     },
     {
         img: rev2,
-        name: `Ronald Richards`,
-        review: `ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.`,
+        name: "Ronald Richards",
+        review: "ullamco est sit aliqua dolor do amet sint.Velit officia consequat duis enim velit mollit.Exercitation veniam consequat sunt nostrud amet.",
     },
     {
         img: rev3,
-        name: `Savannah Nguyen`,
+        name: "Savannah Nguyen",
         review: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
 Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.`,
     },
     {
         img: rev1,
-        name: `Floyd Miles`,
+        name: "Floyd Miles",
         review:
             "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit . Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    },
-    {
-        img: rev2,
-        name: `Ronald Richards`,
-        review: `ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.`,
-    },
+    }
 ];
 
 
@@ -46,6 +41,7 @@ const FeedbackSlider = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        initialSlide: 0,
         responsive: [
             {
                 breakpoint: 1024,
@@ -64,6 +60,13 @@ const FeedbackSlider = () => {
                     slidesToScroll: 1,
                 },
             },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
         ],
     };
 
@@ -71,9 +74,9 @@ const FeedbackSlider = () => {
     return (
         <div className=" container m-auto ">
             <div className=" pb-10 md:pb-20 px-10">
-                <Slider {...settings}>
-                    {data.map((d) => (
-                        <div className="my-custom-slide-style p-[23.19px] h-[320px] relative  bg-white rounded-[10px]  border-2 border-stone-300 flex-col justify-start items-start gap-5 flex"
+                <Slider {...settings} className="custom-slick-slider">
+                    {data.map((d, index) => (
+                        <div key={index} className="  my-custom-slide-style p-[20px] xl:p-[23.19px] h-[320px] relative  bg-white rounded-[10px]  border-2 border-stone-300 flex-col justify-start items-start gap-5  flex"
 
                         >
                             <div className="self-stretch justify-between items-start flex">
@@ -89,7 +92,7 @@ const FeedbackSlider = () => {
                             <div className="text-left text-neutral-700 text-[22px] font-medium  tracking-wide">
                                 {d.name}
                             </div>
-                            <div className="self-stretch  text-zinc-500 text-sm font-normal  tracking-tight pt-2  ">
+                            <div className="self-stretch  text-zinc-500 text-xs md:text-sm font-normal  tracking-tight pt-2  ">
                                 {d.review}
                             </div>
                         </div>

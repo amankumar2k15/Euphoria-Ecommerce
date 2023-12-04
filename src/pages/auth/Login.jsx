@@ -35,7 +35,7 @@ const Login = ({ title, subtitle }) => {
     return (
         <>
             <section className="loginForm flex" >
-                <div className='bg-gray-600 w-full'>
+                <div className=' w-full'>
                     <>
                         <div className=" flex items-center justify-center ">
                             <div className=" w-full overflow-hidden">

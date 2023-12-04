@@ -1,21 +1,8 @@
 import React from "react";
 import ProductListTitle from "../../atoms/ProductListTitle";
-
+import  {Price} from "../../pages/AllArrays/Arrays"
 const WomenClothData = () => {
-  let Price = [
-    { WomenClothes: "Pick Any 4- Womens Plain T-shirt Combo", price: "₹1099", },
-    { WomenClothes: "Pick Any 4- Plain Womens Boxer Combo", price: "₹1099", },
-    { WomenClothes: "Pick Any 4 - Women Plain Full Sleeve T-shirt Combo", price: "₹1399", },
-    { WomenClothes: "Multicolor Checkered Long Casual Shirts for Women", price: "₹499", },
-    { WomenClothes: "Pick Any 2: Plain Boxy Casual Shirts for Women Combo", price: "₹799", },
-    { WomenClothes: "Blue Floral Anarkali Kurti", price: "₹599", },
-    { WomenClothes: "Jade Black Narrow Cut Flexible Women Jeggings", price: "₹998", },
-    { WomenClothes: "Mustard-yellow Solid Straight-Fit Women Pant", price: "₹499", },
-    { WomenClothes: "Women Pants Combo - Pick Any 2", price: "₹800", },
-    { WomenClothes: "Pista Green Solid Boxy Casual Shirts for Women", price: "₹499", },
-    { WomenClothes: "Plain Burgundy Womens Boxer", price: "₹349", },
-    { WomenClothes: "Striped Front Tie Casual Shirts for Women", price: "₹449", },
-  ];
+
 
   return (
     <>

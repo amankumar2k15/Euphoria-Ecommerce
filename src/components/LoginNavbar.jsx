@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Logo from "../assets/Logo.png"
-import { AiOutlineSearch } from "react-icons/ai"
+import EuphoriaImg from "../assets/multipleImg/Euphoria.svg";
+import GroupImg from "../assets/multipleImg/Group.svg";
 import { BiSolidDownArrow } from "react-icons/bi"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { RxCross2 } from "react-icons/rx"
@@ -15,8 +15,9 @@ const LoginNavbar = () => {
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
 
                     {/* Logo  */}
-                    <div className="flex items-center">
-                        <img src={Logo} className="h-8 mr-3" alt="Logo" />
+                    <div className="relative flex items-center">
+                        <img src={EuphoriaImg} alt="" />
+                        <img src={GroupImg} alt="" className=" absolute top-7 left-9" />
                     </div>
 
                     {/* Rightsection */}

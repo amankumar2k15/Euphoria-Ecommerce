@@ -37,8 +37,8 @@ const Register = ({ title, subtitle }) => {
     console.log(formData);
     return (
         <>
-            <section className="loginForm bg-red-400 flex" >
-                <div className='bg-gray-600 w-full'>
+            <section className="loginForm flex" >
+                <div className=' w-full'>
                     <>
                         <div className=" flex items-center justify-center ">
                             <div className=" w-full overflow-hidden">
